@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "sLqzKMsshRKFhlslJ3PGR2dxMgkD1Ae/xI0v0CS6ZeE=",
+  "Source": "PokemonReviewApp.Api",
+  "BasePath": "_content/PokemonReviewApp.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
