@@ -6,4 +6,6 @@ public class Pokemon
     public string? Name { get; set; }
     public DateTime BirthDate { get; set; }
     
+    //many-to-one
+    public ICollection<Review> Reviews { get; set; }
 }
