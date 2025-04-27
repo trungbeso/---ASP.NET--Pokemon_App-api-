@@ -5,6 +5,7 @@ public class Country
     public int Id { get; set; }
     public string Name { get; set; }
     
-    //many-to-one
+    // One-to-Many relationship with Owner
+    // A Country can have many Owners
     public ICollection<Owner> Owners { get; set; }
 }
