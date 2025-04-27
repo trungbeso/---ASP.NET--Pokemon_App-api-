@@ -6,6 +6,15 @@ public class Pokemon
     public string? Name { get; set; }
     public DateTime BirthDate { get; set; }
     
-    //many-to-one
+    // one-to-many relationshop
+    // a pokemon can have many reviews
     public ICollection<Review> Reviews { get; set; }
+    
+    // Many-to-Many relationship with Owner (via PokemonOwner join entity)
+    // A Pokemon can have many Owners
+    public ICollection<PokemonOwner> PokemonOwners { get; set; } = new List<PokemonOwner>();
+    
+    // Many-to-Many relationship with Category (via PokemonCategory join entity)
+    // A Pokemon belongs to many Categories
+    public ICollection<PokemonCategory> PokemonCategories { get; set; }
 }
