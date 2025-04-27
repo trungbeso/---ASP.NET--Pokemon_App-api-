@@ -7,6 +7,7 @@ public class Review
     public int Id { get; set; }
     public string Title { get; set; }
     public string Text { get; set; }
+    public int Rating { get; set; }
     
     // Many-to-One relationship with Reviewer (the author of the review)
     // A Review is written by one Reviewer

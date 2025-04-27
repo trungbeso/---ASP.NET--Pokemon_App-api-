@@ -16,5 +16,5 @@ public class Pokemon
     
     // Many-to-Many relationship with Category (via PokemonCategory join entity)
     // A Pokemon belongs to many Categories
-    public ICollection<PokemonCategory> PokemonCategories { get; set; }
+    public ICollection<PokemonCategory> PokemonCategories { get; set; } = new List<PokemonCategory>();
 }

@@ -3,7 +3,8 @@
 public class Owner
 {
     public int Id { get; set; }
-    public string Name { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
     public string Gym { get; set; }
     
     // Many-to-One relationship with Country
@@ -13,5 +14,5 @@ public class Owner
     
     // Many-to-Many relationship with Pokemon (via PokemonOwner join entity)
     // An Owner owns many Pokemon
-    public ICollection<PokemonOwner> PokemonOwners { get; set; }
+    public ICollection<PokemonOwner> PokemonOwners { get; set; } = new List<PokemonOwner>();
 }

@@ -7,5 +7,5 @@ public class Country
     
     // One-to-Many relationship with Owner
     // A Country can have many Owners
-    public ICollection<Owner> Owners { get; set; }
+    public ICollection<Owner> Owners { get; set; } = new List<Owner>();
 }
