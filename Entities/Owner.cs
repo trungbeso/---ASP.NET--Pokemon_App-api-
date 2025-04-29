@@ -1,7 +1,10 @@
-﻿namespace PokemonReviewApp.Api.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PokemonReviewApp.Api.Entities;
 
 public class Owner
 {
+    [Key]
     public int Id { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }

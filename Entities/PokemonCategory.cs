@@ -1,9 +1,10 @@
-﻿namespace PokemonReviewApp.Api.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PokemonReviewApp.Api.Entities;
 
 // Join Entity for Many-to-Many between Pokemon and Category
 public class PokemonCategory
 {
-    
     public int PokemonId { get; set; } // Foreign Key to Pokemon
     public Pokemon Pokemon { get; set; } // Reference Navigation Property
     
