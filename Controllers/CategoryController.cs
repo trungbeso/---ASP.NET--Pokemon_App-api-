@@ -23,7 +23,7 @@ public class CategoryController : Controller
     [ProducesResponseType(200, Type = typeof(IEnumerable<Category>))]
     public IActionResult GetCategories()
     {
-        var categories = _mapper.Map<CategoiryDto>(_service.GetAll());
+        var categories = _mapper.Map<CategoryDto>(_service.GetAll());
         if (!ModelState.IsValid)
         {
             return BadRequest(ModelState);
@@ -40,7 +40,7 @@ public class CategoryController : Controller
         {
             return NotFound();
         }
-        var category = _mapper.Map<CategoiryDto>(_service.GetById(categoryId));
+        var category = _mapper.Map<CategoryDto>(_service.GetById(categoryId));
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
         return Ok(category);
